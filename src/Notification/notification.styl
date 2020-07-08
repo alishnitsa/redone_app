@@ -1,0 +1,53 @@
+    // @import "./clearing.css"
+#notification
+    display inline-block    
+    position fixed
+    right 20px
+    top 20px
+    height 64px
+    width 240px
+    background: #FFFFFF;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    z-index 2
+    
+    .notification__window
+        position relative
+        height 100%
+        width 100%
+        border-radius: inherit
+        cursor pointer
+
+        .close-wrapper
+            display: flex
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            left: 8px;
+            top: calc(50% - 48px/2);
+            background: #FF647C;
+            border-radius: 8px;
+
+            justify-content: center
+            align-items: center
+
+            .notification-icon
+                background: #FFFFFF;
+
+
+        .notification__text
+            position: absolute;
+            left: 68px;
+            top: calc(50% - 20px/2);
+
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+
+            display: flex;
+            align-items: center;
+
+            color: #1A051D;
+

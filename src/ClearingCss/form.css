@@ -1,0 +1,52 @@
+@import "./clearing.css";
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .form_group {
+  height: 192px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+#root .form_group input {
+  height: 48px;
+  width: 240px;
+  padding-left: 16px;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+#root .form_group input[type="submit"] {
+  background: #6979f8;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  color: #fff;
+  padding-left: 0;
+  box-shadow: none;
+}
+#root .form_group .active {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+#root .form_group .active:placeholder {
+  color: #d0c9d6;
+}
+#root .form_group .view_psw {
+  position: absolute;
+  top: 91px;
+  left: 205px;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+}
