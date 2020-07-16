@@ -23,11 +23,11 @@ class Change extends React.Component {
       return (
          <div className="change_wrapper">
             <div className="change">
-               <div className="change_title">Иванов Иван</div>
+               <div className="change__title">Иванов Иван</div>
                <div className="path" onClick={this.closeChange}>
                   <UserChangeModal__svg />
                </div>
-               <form className="change_form">
+               <form className="change__form">
                   <input type="text" className="fname" />
                   <input type="text" className="name" />
                   <input type="text" className="mname" />

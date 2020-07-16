@@ -21,7 +21,7 @@
 
       position relative
 
-      .change_title
+      .change__title
          position: absolute;
          height: 41px;
          left: 34px;
@@ -52,7 +52,7 @@
 
          cursor pointer
 
-      .change_form
+      .change__form
          position absolute
          top 80px
          left 0
@@ -60,8 +60,9 @@
          width: 100%
          border-top: 1px solid #ECEBED;
          display: flex
+         flex-wrap: wrap
          justify-content: space-around
-
+         
          .fname, .name, .mname
             width: 240px;
             height: 48px;
@@ -80,7 +81,8 @@
             position: absolute;
             width: 240px;
             height: 48px;
-                
+            
+            // margin: 28px 34px;
             left: 34px;
             top: 110px;                
 
@@ -109,3 +111,8 @@
             text-align: center;
             color: #FFFFFF;
             cursor pointer
+
+@media (max-width 1024px)
+   .change__form
+      flex-direction: column
+      justify-content: center

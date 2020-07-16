@@ -3,7 +3,7 @@
 
 
 testBorder = 1px solid #000
-widthContainer = calc(1440px - 48px*2);
+widthContainer = calc(100% - 48px*2);
 
 html 
    background: #F7F7F7
@@ -55,66 +55,17 @@ html
                border-left: 3px solid #ffffff 
                border-bottom: 3px solid #6979f8;
 
-      .container
-         position: absolute
-         left: 48px;
-         top: 95px;
-         display: flex
-         flex-direction: column
-         margin: 48px 48px 0 48px;
-         width: widthContainer
-         min-height 100%
-
-         .person
-            height 80px
-            width: auto
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            margin-bottom: 18px;
-            background: #ffffff
-            border-radius: 4px;
-            align-items: center
-            padding: 16px
-
-            z-index 1
-
-            cursor pointer
-            
-
-            .person_item
-               display: flex
-               flex-direction: row
-               align-items: center
-
-            div
-               display: flex;
-               align-items: center;
-
-               color: #000000;
-
-            .avatar
-               width 48px
-               height 48px
-               background: #123456
-               border-radius: 64px;
-               margin-right: 16px
-
-            .person_name
-               margin-right: 44px;
-
-            .balance
-               z-index: 3
-
-            .date
-               z-index: 3
-               color: #A8A8A8;
-
-            .status
-               width: 193px;
-               margin-left 38px;
-               margin-right 29px;
-               padding: 16px
+   .container
+      position: absolute
+      // left: 48px;
+      top: 48px;
+      max-width: 1344px;
+      width widthContainer
+      display: flex
+      flex-direction: column
+      margin: 48px 48px 0 48px;
+      // width: widthContainer
+      // min-height 100%
 
       .gradient
          position: fixed
@@ -137,5 +88,15 @@ select
    border: none;
    outline: none;
    padding: 5px;
+
+
+@media (max-width: 1440px)
+   .container
+      max-width: 1344px;
+
+
+@media (max-width: 1024px)
+   .date
+      color: red
 
 

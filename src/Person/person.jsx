@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Change } from "../UserChangeModal/userChangeModal.jsx";
+import "./person.styl";
 
 const openChange = () => (
    ReactDOM.render(<Change />, document.getElementById("modal"))
